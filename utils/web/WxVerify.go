@@ -13,7 +13,7 @@ import (
      * @param nonce 随机字符串
      * @return 安全签名
      */
-func WxVerify(token string, timestamp string, nonce string) string {
+func GetSHA1(token string, timestamp string, nonce string) string {
 	//将token、timestamp、nonce三个参数进行字典序排序
 	var tempArray = []string{token, timestamp, nonce}
 	sort.Strings(tempArray)
