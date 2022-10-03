@@ -12,7 +12,6 @@ import (
 	"github.com/dgrijalva/jwt-go"
 )
 
-var jwtKey = []byte("wohaocai")
 
 type Claims struct {
 	UserId uint
